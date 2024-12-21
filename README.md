@@ -7,3 +7,5 @@ python src/train_mlflow.py
 # Predict a Model
 streamlit run src/prediction.py
 
+# Mlflow Documentation to refer
+https://mlflow.org/docs/latest/getting-started/intro-quickstart/index.html
