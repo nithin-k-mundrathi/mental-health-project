@@ -9,7 +9,7 @@ load_model=pickle.load(pickle_in)
 def welcome():
     return "Welcome All"
 
-def predict_note_authentication(f1,f2,f3,f4,f5,f6,f7,f8,f9,f10,f11,f12,f13):
+def predict_mental_illness(f1,f2,f3,f4,f5,f6,f7,f8,f9,f10,f11,f12,f13):
     
     """Let's find if a person has Mental Illnes 
     This is using docstrings for specifications.
@@ -99,7 +99,7 @@ def main():
     f13 = st.text_input("age_c","Type Here")
     result=""
     if st.button("Predict"):
-        result=predict_note_authentication(f1,f2,f3,f4,f5,f6,f7,f8,f9,f10,f11,f12,f13)
+        result=predict_mental_illness(f1,f2,f3,f4,f5,f6,f7,f8,f9,f10,f11,f12,f13)
     st.success('The output is {}'.format(result))
     if st.button("About"):
         st.text("Built with Streamlit")

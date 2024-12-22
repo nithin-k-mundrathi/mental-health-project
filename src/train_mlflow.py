@@ -8,10 +8,8 @@ from sklearn.metrics import accuracy_score, precision_score, recall_score, f1_sc
 from tqdm import tqdm
 mlflow.set_tracking_uri(uri="http://localhost:8080")
 
-
+# Load the Dataset
 X  = pd.read_pickle('data/processed_data.pkl')
-
-# Load the Iris dataset
 y = X['label_c']
 X.drop(['label','label_c'],axis=1,inplace=True)
 
@@ -58,8 +56,6 @@ def train_model(params):
             input_example=X_train,
             registered_model_name="tracking-depression-model",
         )
-
-
     return {'status' : STATUS_OK,'loss':1-(test_auc)}
 
 # Set our tracking server uri for logging
