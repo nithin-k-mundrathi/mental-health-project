@@ -1,3 +1,6 @@
+# Install all the packages
+pip install -r requirements.txt
+
 # Run the Mlfow command
 mlflow server --host 127.0.0.1 --port 8080
 
