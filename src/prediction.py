@@ -1,6 +1,6 @@
 import numpy as np
-import pickle
 import pandas as pd
+import pickle
 import streamlit as st
 
 pickle_in = open("models/model.pkl","rb")
@@ -15,58 +15,58 @@ def predict_note_authentication(f1,f2,f3,f4,f5,f6,f7,f8,f9,f10,f11,f12,f13):
     This is using docstrings for specifications.
     ---
     parameters:  
-      - Number of Children: variance
+      - Number of Children: 
         in: query
         type: number
         required: true
-      - name: income_clipped
+      - income_clipped: 
         in: query
         type: number
         required: true
-      - substance_c: variance
+      - substance_c: 
         in: query
         type: number
         required: true
-      - depression_c: variance
+      - depression_c: 
         in: query
         type: number
         required: true
-      - medical_c: variance
+      - medical_c: 
         in: query
         type: number
         required: true
-      - alcohol_c: variance
+      - alcohol_c: 
         in: query
         type: number
         required: true
-      - sleep_c: variance
+      - sleep_c: 
         in: query
         type: number
         required: true
-      - dietary_c: variance
+      - dietary_c: 
         in: query
         type: number
         required: true
-      - physical_c: variance
+      - physical_c: 
         in: query
         type: number
         required: true
-	  - smoker_c: variance
-        in: query
-        type: number
-        required: true
-	  - marital_c: variance
-        in: query
-        type: number
-        required: true
-	  - education_c: variance
-        in: query
-        type: number
-        required: true
-	  - age_c: variance
-        in: query
-        type: number
-        required: true
+      - smoker_c: 
+          in: query
+          type: number
+          required: true
+      - marital_c: 
+          in: query
+          type: number
+          required: true
+      - education_c: 
+          in: query
+          type: number
+          required: true
+      - age_c: 
+          in: query
+          type: number
+          required: true
     responses:
         200:
             description: The output values

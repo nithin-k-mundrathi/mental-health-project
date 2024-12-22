@@ -1,13 +1,14 @@
+from hyperopt import fmin,tpe,STATUS_OK,hp
 import mlflow
+import numpy as np
 import pandas as pd
-from sklearn.model_selection import train_test_split
 from sklearn.ensemble import RandomForestClassifier
+from sklearn.model_selection import train_test_split
 from sklearn.metrics import accuracy_score, precision_score, recall_score, f1_score,roc_auc_score
 from tqdm import tqdm
-from hyperopt import fmin,tpe,STATUS_OK,hp
 mlflow.set_tracking_uri(uri="http://localhost:8080")
 
-import pandas as pd
+
 X  = pd.read_pickle('data/processed_data.pkl')
 
 # Load the Iris dataset

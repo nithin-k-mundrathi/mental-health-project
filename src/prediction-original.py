@@ -1,6 +1,6 @@
 import numpy as np
-import pickle
 import pandas as pd
+import pickle
 import streamlit as st
 
 pickle_in = open("models/model.pkl","rb")
