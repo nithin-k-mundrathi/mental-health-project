@@ -78,5 +78,5 @@ with mlflow.start_run(run_name = 'depression_mlflow') as run:
         fn = train_model,
         space = params,
         algo = tpe.suggest,
-        max_evals = 8
+        max_evals = 2
     )
