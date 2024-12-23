@@ -6,6 +6,8 @@ from sklearn.ensemble import RandomForestClassifier
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import accuracy_score, precision_score, recall_score, f1_score,roc_auc_score
 from tqdm import tqdm
+import warnings
+warnings.filterwarnings("ignore")
 mlflow.set_tracking_uri(uri="http://localhost:8080")
 
 # Load the Dataset

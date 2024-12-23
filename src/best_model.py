@@ -1,5 +1,7 @@
 import mlflow
 import shutil
+import warnings
+warnings.filterwarnings("ignore")
 
 # get the Id of the Experiment
 id_experiment = mlflow.get_experiment_by_name('MLflow Depression').experiment_id
