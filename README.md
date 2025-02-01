@@ -16,3 +16,8 @@ streamlit run src/prediction-original.py
 
 # Mlflow Documentation to refer
 https://mlflow.org/docs/latest/getting-started/intro-quickstart/index.html
+
+# airflow Host address
+http://localhost:8080/
+
+

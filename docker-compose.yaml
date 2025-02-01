@@ -1,0 +1,10 @@
+version: "3"
+services:
+  airflow:
+    build:
+      context: ./
+      dockerfile: Dockerfile.airflow
+    image: airflowdocker
+    container_name: prediction-airflow
+    ports:
+      - "8080:8080"
